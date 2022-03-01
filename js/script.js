@@ -29,7 +29,7 @@ player2.addEventListener('click', () => {
     player2.innerHTML = 'AI'
     player2.style.backgroundColor = 'grey'
     ai++
-    if (moveCounter > 0) {
+    if (moveCounter > 0 && moveCounter % 2 != 0) {
       randomPlay()
     }
   }
